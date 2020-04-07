@@ -1,0 +1,113 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 264 208)
+	(text "IO_SRAM" (rect 5 0 53 12)(font "Arial" ))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IO_WRITE" (rect 0 0 53 12)(font "Arial" ))
+		(text "IO_WRITE" (rect 21 27 74 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SRAM_ADHI_EN" (rect 0 0 84 12)(font "Arial" ))
+		(text "SRAM_ADHI_EN" (rect 21 43 105 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "SRAM_ADLOW_EN" (rect 0 0 97 12)(font "Arial" ))
+		(text "SRAM_ADLOW_EN" (rect 21 59 118 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "SRAM_DATA_EN" (rect 0 0 86 12)(font "Arial" ))
+		(text "SRAM_DATA_EN" (rect 21 75 107 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "SRAM_ADDR[17..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "SRAM_ADDR[17..0]" (rect 127 43 227 55)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 3))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "SRAM_OE_N" (rect 0 0 66 12)(font "Arial" ))
+		(text "SRAM_OE_N" (rect 161 59 227 71)(font "Arial" ))
+		(line (pt 248 64)(pt 232 64)(line_width 1))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "SRAM_WE_N" (rect 0 0 68 12)(font "Arial" ))
+		(text "SRAM_WE_N" (rect 159 91 227 103)(font "Arial" ))
+		(line (pt 248 96)(pt 232 96)(line_width 1))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "SRAM_UB_N" (rect 0 0 66 12)(font "Arial" ))
+		(text "SRAM_UB_N" (rect 161 107 227 119)(font "Arial" ))
+		(line (pt 248 112)(pt 232 112)(line_width 1))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "SRAM_LB_N" (rect 0 0 63 12)(font "Arial" ))
+		(text "SRAM_LB_N" (rect 164 123 227 135)(font "Arial" ))
+		(line (pt 248 128)(pt 232 128)(line_width 1))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "SRAM_CE_N" (rect 0 0 66 12)(font "Arial" ))
+		(text "SRAM_CE_N" (rect 161 139 227 151)(font "Arial" ))
+		(line (pt 248 144)(pt 232 144)(line_width 1))
+	)
+	(port
+		(pt 248 32)
+		(bidir)
+		(text "IO_DATA[15..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "IO_DATA[15..0]" (rect 150 27 227 39)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 248 80)
+		(bidir)
+		(text "SRAM_DQ[15..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "SRAM_DQ[15..0]" (rect 143 75 227 87)(font "Arial" ))
+		(line (pt 248 80)(pt 232 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 176)(line_width 1))
+	)
+)
