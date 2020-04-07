@@ -1,0 +1,124 @@
+ORG &H00
+
+LOAD addr_hi
+OUT SRAM_ADHI
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 2
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 3
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 5
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 7
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 11
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 13
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 17
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 19
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 23
+OUT SRAM_DATA
+
+LOAD addr_low
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+LOADI 29
+OUT SRAM_DATA
+
+LOADI 0
+OUT SRAM_ADLOW
+ADDI 1
+STORE addr_low
+IN SRAM_DATA
+
+
+START:  LOAD addr_low
+		OUT SRAM_ADLOW
+		ADDI 1
+		STORE addr_low
+		IN SRAM_DATA
+		
+		LOAD count
+		ADDI 1
+		STORE count
+		SUB 9 		
+		JNEG START
+
+END: JUMP END
+
+
+
+
+
+
+
+
+
+
+ORG &H100
+DW count: 0
+DW addr_low: &H0
+DW addr_hi: &H0
+DW data1: 2
+DW data2: 3
+DW data3: 5
+DW data4: 7
+DW data5: 11
+DW data6: 13
+DW data7: 17
+DW data8: 19
+DW data9: 23
+DW data10: 29
+
+
+SRAM_DATA: EQU &H11 
+SRAM_ADLOW: EQU &H12 
+SRAM_ADHI: EQU &H13  
